@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 main {
@@ -15,4 +16,48 @@ main {
     background: #f857a6;
     background: linear-gradient(to right, #ff5858, #f857a6);
     font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+section {
+    background-color: rgba(255, 0, 0, 0.2);
+    padding: 2.5rem 3.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+}
+
+#status {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.container p {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: -0.5rem;
+}
+
+.container span {
+    font-size: 1.25rem;
+}
+
+#btn-start {
+    width: 50%;
+    margin-inline: auto;
+    padding-block: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #ff5858;
+    font-weight: bold;
+    font-size: 1.15rem;
+    letter-spacing: 0.15rem;
 }
