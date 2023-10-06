@@ -3,6 +3,7 @@ let isStart = false;
 function start() {
     const workTimeElement = document.getElementById("working-time");
     const breakTimeElement = document.getElementById("break-time");
+    const status = document.getElementById("status");
 
     workTimeElement.setAttribute("contenteditable", "false");
     breakTimeElement.setAttribute("contenteditable", "false");
@@ -20,6 +21,8 @@ function start() {
 
     window.interval = setInterval(() => {
         if (isWorking) {
+            status.textContent = "WORKING";
+
             if (secWork === 0) {
                 minWork--;
                 secWork = 60;
@@ -39,6 +42,8 @@ function start() {
                 showNotification("Break Time");
             }
         } else {
+            status.textContent = "BREAKING";
+
             if (secBreak === 0) {
                 minBreak--;
                 secBreak = 60;
