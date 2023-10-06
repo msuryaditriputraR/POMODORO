@@ -1,0 +1,14 @@
+/* ==================== BASE CSS ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: #f857a6;
+    background: linear-gradient(to right, #ff5858, #f857a6);
+}
